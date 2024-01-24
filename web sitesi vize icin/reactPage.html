@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="stil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+
+<body>
+    <div class="ust-kisim-sayfalar">
+        <nav class="navbar navbar-expand-lg nav-bg  ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid logo" src="resimler/logoLion.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="nav-link active" aria-current="page" href="hakkimda.html">Hakkımda</a>
+                            <span class="ayrac">|</span>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="nav-link" href="projeler.html">Projeler</a>
+                            <span class="ayrac">|</span>
+                        </li>
+
+
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                            <span class="ayrac">|</span>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="nav-link" href="iletisim.html">İletişim</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex align-items-center header-yuk">
+                    <div class="sayfa-baslik ms-4">
+                        <h3>BLOG</h3>
+                        <P>React
+                        </P>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div style="margin: 2% 10%;">
+        <img src="resimler/react.png.png" style="height: 10%; width: 20%; padding-bottom: 2%;" alt="">
+        <h1>React ile Modern Web Geliştirme: Başlangıç Rehberi</h1>
+        <p>Günümüzde web geliştirme, kullanıcı dostu ve etkileşimli arayüzlerle zenginleştirilmiş uygulamalar
+            oluşturmayı gerektiriyor. Bu noktada, Facebook tarafından geliştirilen ve şu anda geniş bir topluluk
+            tarafından desteklenen React, modern web uygulamaları geliştirmek için popüler bir JavaScript kütüphanesi
+            haline geldi. Bu yazıda, React'in temel kavramlarına odaklanarak, bu güçlü kütüphaneyi anlamaya ve
+            kullanmaya başlamak için bir rehber sunacağız.</p>
+        <h1>React Nedir?</h1>
+        <p>React, kullanıcı arayüzleri oluşturmak için kullanılan bir JavaScript kütüphanesidir. React, bileşen tabanlı
+            bir yaklaşımı benimser ve uygulamanızı küçük, bağımsız parçalara ayırmanıza olanak tanır. Bu parçalara
+            "bileşen" denir ve her biri belirli bir işlevi yerine getirir.</p>
+        <h1>Bileşen Tabanlı Geliştirme</h1>
+        <p>React'in temeli bileşen tabanlı geliştirmedir. Her bir bileşen, kendi iç mantığına sahip, bağımsız bir
+            yapıdır. Bu bileşenler, başka bileşenleri içerebilir ve bir araya gelerek daha karmaşık arayüzleri
+            oluşturabilirler. Örneğin, bir e-ticaret uygulaması için "ÜrünListesi", "Sepet", ve "ÖdemeFormu" gibi
+            bileşenler oluşturabilir ve bunları birleştirerek tam bir uygulama oluşturabilirsiniz.</p>
+        <h1>JSX ve Sanal DOM</h1>
+        <p>React, JSX adı verilen bir sözdizimini destekler. JSX, JavaScript'e HTML benzeri bir sözdizimi ekler, bu da
+            bileşenlerinizi daha okunabilir ve anlaşılır kılar. Ayrıca, React'in performansını artıran bir özellik olan
+            sanal DOM'u kullanır. Bu, React'in yalnızca değişiklikleri takip etmesine ve gerçek DOM manipülasyonları
+            yapmasına gerek kalmadan uygulamanızın güncellenmiş bir sürümünü oluşturmasına olanak tanır.</p>
+        <h1>State ve Props</h1>
+        <p>React uygulamaları, bileşenlerin durumu (state) ve özellikleri (props) aracılığıyla yönetilir. State, bir
+            bileşenin içindeki verileri temsil eder ve bileşenin durumu değiştikçe güncellenir. Props ise bir bileşene
+            dışarıdan veri iletilmesini sağlar.</p>
+        <h1>React Router ve Tek Sayfa Uygulamaları</h1>
+        <p>React Router, tek sayfa uygulamaları (SPA) için yaygın olarak kullanılan bir rota yönetimi kütüphanesidir.
+            SPA'lar, sayfalar arasında geçiş yaparken sayfanın tamamını yeniden yüklemeden, yalnızca içeriği
+            güncelleyerek daha hızlı bir kullanıcı deneyimi sağlar.</p>
+        <h1>Redux ile Durum Yönetimi</h1>
+        <p>Büyük ve karmaşık uygulamalarda, bileşenler arasında durum paylaşımını yönetmek önemlidir. Redux, uygulama
+            durumunu tek bir depoda (store) yöneten ve durumu değiştirmek için eylemleri (actions) kullanan bir
+            kütüphanedir.</p>
+        <h1>Sonuç</h1>
+        <p>React, modern web uygulamaları geliştirmek için güçlü bir araçtır. Bu yazıda, temel React kavramlarına genel
+            bir bakış sunduk, ancak React'in sunduğu daha pek çok özellik ve konsept bulunmaktadır. React ile daha fazla
+            deneme yaparak ve projeler geliştirerek, bu kütüphaneyi daha iyi anlamaya başlayabilirsiniz. Happy coding!
+        </p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid footer">
+
+        <div class="row ">
+            <div class="col-md-12 footer-sutun d-flex flex-column justify-content-center align-items-center ">
+                <div class="ikonlar">
+                    <a href="https://www.instagram.com/atillatls/" style="color: #95A5A6;" target="_blank"><i
+                            class=" fa-brands fa-square-instagram fa-3x "></i></a>
+
+                    <a href="https://www.youtube.com/channel/UCSqmcH8hqBLHCB6BPCN_hjg" style="color: #95A5A6;"
+                        target="_blank"><i class="fa-brands fa-square-youtube fa-3x "></i></a>
+
+                    <a href="https://www.linkedin.com/in/atilla-arslan-3b32861b4/" style="color: #95A5A6; "
+                        target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+
+                    <a href="https://github.com/Atilla0001" style="color: #95A5A6; " target="_blank"><i
+                            class="fa-brands fa-square-github"></i></a>
+
+                    <i class="fa-brands fa-square-x-twitter fa-3x "></i>
+                    <i class="fa-brands fa-square-facebook fa-3x "></i>
+                </div>
+                <p>© Atilla ARSLAN, 2023 Inc.</p>
+                <p>Tasarım Bilişim Teknoloji</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

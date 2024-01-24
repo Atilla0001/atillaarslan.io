@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="stil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+
+<body>
+    <div class="ust-kisim-sayfalar">
+        <nav class="navbar navbar-expand-lg nav-bg  ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid logo" src="resimler/logoLion.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="nav-link active" aria-current="page" href="hakkimda.html">Hakkımda</a>
+                            <span class="ayrac">|</span>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="nav-link" href="projeler.html">Projeler</a>
+                            <span class="ayrac">|</span>
+                        </li>
+
+
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                            <span class="ayrac">|</span>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="nav-link" href="iletisim.html">İletişim</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex align-items-center header-yuk">
+                    <div class="sayfa-baslik ms-4">
+                        <h3>BLOG</h3>
+                        <P>Vue
+                        </P>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div style="margin: 2% 10%;">
+        <img src="resimler/vue.png.png" style="height: 10%; width: 20%; padding-bottom: 2%;" alt="">
+        <h1>Nedir bu Vue Js ?</h1>
+        <p>Modern bir prograsive javascript framework’üdür.
+            Kullanıcı dostudur.
+            Yazım şekli ve özellikleri açısından oldukça anlaşılır kolay bir yapısı vardır.
+            Çok yönlüdür. İstediğiniz herhangi bir özelliğini kullanabilirsiniz.
+            React ve Angular’a oranla daha performanslıdır.
+            Sürdürülebilirdir. Siz bir uygulamayı canlıya çıktığınızda canlıdaki uygulama üzerinden rahatlıkla
+            geliştirmeye devam edebilirsiniz.
+            Test edilebilirdir. Kendiniz uygulamanıza çeşitli test senaryoları yazabilirsiniz.Reusable component
+            yapısına sahiptir. Yani kendi içerisinde html,css ve javascriptleri barındıran ufak uygulamalara sahiptir.
+            Örneğin sitenizde bulunan header, product alanı veya footer kısmınızını sadece bir kerelik component olarak
+            tanımlayabilir ve istediğiniz yerde tekrardan kod yazmadan kullanabilirsiniz.</p>
+        <h1>DOM etkileşimleri</h1>
+        <p>Vue js çalışırken kontrol ettiği html bloğunu ele alır ve yorumlar(render). Yorumladığı html bloğundan bir
+            sonuç çıkartır ve ardından bu sonucu DOM’a basar. Yani html üzerinde çalışma anında bir işlem yapmaz.Vue
+            js’nin en güzel yönü direkt değil dolaylı yönden html üzerinde işlem yapıyor olmasıdır. Vue js’nin
+            instance’ı yaratıldığı anda, bizim belirttiğimiz html bloğunu ele alır. Sizin süslü parantezlerle html
+            bloğunun içerisine belirttiğiniz veriyi data içerisinde belirtmiş olduğunuz veri ile kıyaslar. Eğer iki
+            veride birbiri karşılıyorsa sanki server-side’da bir işlem yapılmış da html alanının içine basılmış gibi
+            ilgili yere datayı bind eder. Bu işlem sadece dataya özel olmamakla birlikte aynı şekilde bir fonksiyonun
+            return değerini de html’e bind edebilirsiniz.</p>
+        <h1>Directive nedir? Nasıl kullanılır ?</h1>
+        <p>Direktifler Vue Js tarafından işlem yapmamızı sağlayan tanımlamalardır. Süslü parantez kullandığımızda bir
+            veriyi html’e yani view katmanına yazdırabilirsiniz. Yalnız verimiz dinamik olduğunda bunu ekrana yazdırmak
+            için direktiflerden yararlanmamız gerekmektedir. Vue js kendi içerisinde birçok built-in direktif
+            barındırır. İlerleyen konularda bunların çoğunu görecek ve kendimiz de direktifler oluşturacağız. Yalnız
+            şuan için kullanımı ile alakalı bilgi sahibi olmanız için bir iki örnek üzerinden direktifleri inceleyelim.
+        </p>
+        <h1>Event’i bind etmek</h1>
+        <p>1: Normalde bir parametre ve event’i birlikte göndereceğiniz zaman event’i kaybettiğinizi düşünebilirisiniz.
+            Ancak bu durumda event’iniz kaybolmuyor. Paremetre ile birlikte göndereceğiniz zaman sadece event’i hangi
+            sırada göndereceğinizi belirlemek ve başına dolar($) işareti koymanız yeterli oluyor. <br>
+            2: Burada showMouseCoordinate fonksiyonumuza gönderdiğimiz parametre ve event sayesinde mouse’umuzu hareket
+            ettirdikçe hem x,y koordinatlarını yazdırıyoruz hemde numaramızın değerini on ekleyerek arttırıyoruz. <br>
+            3: Bir eventin kendine has özelliklerini yapmamızı engelleyen özelliğe modifier denir. Bu işlem jquery ve
+            javascript’den de uzak olmadığımız bir kavram. Yalnız Vue Js’de modifier işlemlerini yapmak biraz farklı,
+            ancak daha kolay. Burada mousemove işleminin olduğu html taglarının arasına bu işlemi durduracak bir “stop”
+            html’i oluşturarak modifier işlemi yapabilirsiniz.</p>
+        <h1>Two-way data binding</h1>
+        <p>Şu ana kadar instance’da bulunan veriyi template üzerinde göstermek için attribute binding yaptık, süslü
+            parantezlerle string olarak bastık yada metot tanımlayıp üzerinden değeri return ettik. Ancak bu işlemleri
+            gerçekleştirirken hep ya bir event’i tetikleyerek yada event’in value’sini dinleyerek gerçekleştirdik.
+            Aslında two way data binding işlemi bize Angular veya React’den de yabancı olmadığımız veriyi hem okuma
+            hemde aynı zamanda yazma işlemlerini yapmamızı sağlayan bir veri bağlama özelliği.</p>
+        <h1>Computed property ile reactivity çalışmak</h1>
+        <p>Reactivity’yi zincirleme bir reaksiyon olarak düşünebilirsiniz. Örneğin bir butona tıkladığımızda data
+            içerisindeki bir property’nin değerinin değişmesi, aynı zamanda değişen propery’ye bağlı başka bir
+            property’nin de bundan etkilenmesi olarak düşünebilirsiniz.Diyelim ki yukarıdaki gibi butonlara basılınca
+            sayıyı bir arttıran veya azaltan bir uygulamamız olsun. İlk anda baktığımızda hiç bir sıkıntısı olmayan ve
+            gayet düzgün çalışan bu kodun derinine indiğimizde aslında çok büyük sıkıntıları olduğunu göreceksiniz. Data
+            içerisinde bulunan herhangi bir property’nin değeri değişiyorsa ve bu değişen property’nin değerini template
+            üzerinde yazdırıyorsak bu property’nin değeri değiştikçe template kendini yeniden yükleyecektir(render). Bu
+            durum yukarıdaki kodda çok fark edilmese de, daha büyük datalarla uğraştığımızda bu render işlemi her
+            seferinde gerçekleşecek ve bizim zaman maliyetimizi çok fazla alacaktır. Hatta yukarıdaki alanda başka bir
+            data property’si de kullanırsak her butona bastığımızda alakası olmasa bile o property de render
+            edilecektir.</p>
+        <h1>Koşullar ve Listeler</h1>
+        <p>Web sayfamızda belirli bir bölmeyi belirli bir koşula bağlı olarak göstermek istiyor yada istemiyoruz
+            olabilirsiniz yada bir array’iniz var ve bu array içerisindeki elemanları tek bir kodla listelemek
+            istiyorsunuz. İşte bu ve bunun gibi durumlar için hangi direktifleri kullanacağımızı inceleyeceğiz.
+            <br>
+
+            V-if / V-else / V-else-if
+            <br>
+            Burada öncelikle koşulumuzun kontrolünü sağlayabilmek için sonuç üreten bir yapı oluşturmamız gerekiyor. Bu
+            yapıyı data da,methods da yada computed da nerede kurgulayacağız önemli değil. V-if direktifi karşıladığı
+            true veya false değerine göre aksiyon alır. Örneğin “v-if=false” yazarsak “true olursa göster false olursa
+            gösterme” demiş oluyoruz. Yani bunu tanımladığımız div gösterilmeyecektir. Buradaki false alanına javascript
+            kodu da yazabilirsiniz. Ancak o kodun sadece “false-true” çıktısıyla ilgilenir.
+            <br>
+            Örneğin bir buton etkileşimi ile iki yazının gösterip gizlenmesi şeklinde bir örnek olsun. Burada amaç bir
+            butona bastığımızda yazının birinin gösterilip diğerinin gösterilmemesi. Kısacası iki yazının görünürlüğü
+            arasında ters bir ilişki olması. Açılış anında data instance’ında show’un karşılığı false olduğu için ilk
+            yazı görünmeyecektir. Butona basıldığında ters gösterimin olması için Vue-Js’nin if ile kullanılan bir
+            direktifi olan v-else’den yararlanıyoruz. V-else burada v-if ‘in koşulu sağlanmadığı zaman devreye giren bir
+            direktiftir.
+
+            Tüm yazılım dillerinde olduğu gibi Vue Js’de de else if kullanımı da mevcut.
+        </p>
+        <h1>Vue Instance’ı nasıl çalışır ?</h1>
+        <p>Vue Js DOM ve Javascript içerisinde bağlantıyı kuran orta adam(middle man) elemanıdır. Html içerisinde
+            tanımlayacağımız bütün tanımlamaları ve aksiyonları yaptığımız yer Vue instance’dır. Şu ana kadar Vue
+            instance’ını oluştururken el, data, methods, computed ve watch property’lerinden yaralandık. Bu property’ler
+            bizim Vue Js uygulamamızı yapmamızı sağlayan temel property’lerdir. Şu ana kadar gördüğümüz konularda
+            kafanıza iki soru takılmış olabilir; <br>
+            1- “Hep bir tane Vue template’i üzerinden bir Vue instance’ı kontrol ettik. Peki birden fazla Vue instance’ı
+            oluşturulabilir mi ? ve farklı template’ler kontrol edilebilir mi?” <br>
+            2- “Vue instance’ına dışarıdan javascript ile müdahale edebilir miyiz ?”
+            Bu iki sorunun cevabı da “Evet”.
+        <h1>$el $refs ve $data objeleri</h1>
+        <p>$el : Vue js bütün template işlemini el objesi’si üzerinden yapar.
+            $data : Bu obje bizim Vue instance içerisinde tanımladığımız data property’sini veriyor. Yani örnek verecek
+            olursak; Vue instance içerisinde tanımladığınız title’a console’dan vue.title ile ulaşabileceğiniz gibi aynı
+            zamanda vue.$data.title ile de ulaşabilirsiniz. Çünkü ikisi de aynı yere bakıyor.
+            $refs : Herhangi bir html tagına eklendiğinde bulunduğu html tagının elementlerine erişebilirsiniz.$Refs Vue
+            instance’ının içerisinde bir obje olduğu için this.$refs… diyerek erişim de sağlayabiliriz. Örneğin
+            yukarıdaki örneğimize ekleme yaparak butona tıklandığında isminin değiştirilmesini ref üzerinden yapalım.
+        </p>
+        <h1>Template mount etme işlemi</h1>
+        <p>Bu zamana kadar gördüğümüz işlemlerde “id” si “app” adında bir kapsayıcı “div” ile yapılar oluşturduk. Bu
+            kapsayıcı “div” aslında içerisinde bulunan elementlerle ilgili aksiyon almamızı sağlıyor. Aslında bizim
+            yaptığımız şey aslında bir template. Vue Js gidiyor bizim belirttiğimiz div yapısını alıyor kendi içerisinde
+            kendi anlayabileceği bir Javascript’e dönüştürüyor. Daha sonra DOM’a bunu gönderip Native Html olarak
+            yapıştırıyor. Peki bize bu yapıyı oluşturmamızda ön ayak olan “el” property’sini silersek ne olur?</p>
+        <h1>Component ve Kullanımları</h1>
+        <p>Oluşturduğunuz bir yapıyı farklı yerlerde kullanmak için kopyala/yapıştır yapmaktansa, tek bir yerde yaratıp
+            kullanacağınız sayfalarda sadece çağırmanızı sağlayan yapılara component’lerdir. Hatırlarsanız “template
+            mount” konusunda “template:” property’si içerisinde gördüğümüz elementleri ya “$mount()” ile yada “id”sinden
+            yakalayarak “el” ile tanımlayabiliyorduk.</p>
+        <h1>Yaşam Döngüsü (LifeCycle)</h1>
+        <p>Vue Js’in çalışma mantığını şu şekilde özetleyebiliriz; Herşey biz “new Vue()” dediğimiz anda aslında
+            başlıyor ancak Vue instance’ı yatılmamış oluyor. Bu aşamada verilerimiz daha yaratılmadan önce kontrol
+            altına almamız gereken bir şeyler varsa “beforeCreate()” metod’u içerisinde yapabiliyoruz. Ardından
+            verilerimiz oluşturuluyor. Yani bu noktada eğer bir şey yapmak istersek “create()” metodundan yararlanmamız
+            gerekiyor. Ardından “el” olarak yakaladığımız html template’imiz oluşuyor ama hala kullanıcı bizim oluşan bu
+            yapımızı hala göremiyor. Kullanıcıların bu html yapımızı göremesinden hemen önce yapmak istediğimiz bir adım
+            var ise burada “beforeMount()” metodundan yararlanmamız gerekiyor. Daha sonra “el” ile yakaladığımız yapı
+            artık değiştiriliyor(Ör;{{title}} yazan alanların içleri doluyor). Yani sonunda kullanıcı yüklenmiş olan
+            DOM’u görebilir hale geliyor. Tabi siz datalarda değişiklikler yapıyorsunuz yada etkilişimlere giriyorsunuz.
+            Bu aşamada Vue datalarınız değişimlerini aynı React’de olduğu gibi Virtual DOM ile algılıyor ve sadece
+            datalardaki değişiklikleri değiştirecek “re-render” işlemini tetikliyor. Bu datalardaki değişikliklerin olma
+            aşamasından hemen önce bir değişiklik yapmak istiyorsak burada “beforeUpdate()” metodundan yararlanıyoruz.
+            Tabiki bu “re-render” işleminin sonunda DOM güncelleniyor yani update oluyor. Bu noktada da “update()”
+            metodundan yararlanıyoruz.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid footer">
+
+        <div class="row ">
+            <div class="col-md-12 footer-sutun d-flex flex-column justify-content-center align-items-center ">
+                <div class="ikonlar">
+                    <a href="https://www.instagram.com/atillatls/" style="color: #95A5A6;" target="_blank"><i
+                            class=" fa-brands fa-square-instagram fa-3x "></i></a>
+
+                    <a href="https://www.youtube.com/channel/UCSqmcH8hqBLHCB6BPCN_hjg" style="color: #95A5A6;"
+                        target="_blank"><i class="fa-brands fa-square-youtube fa-3x "></i></a>
+
+                    <a href="https://www.linkedin.com/in/atilla-arslan-3b32861b4/" style="color: #95A5A6; "
+                        target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+
+                    <a href="https://github.com/Atilla0001" style="color: #95A5A6; " target="_blank"><i
+                            class="fa-brands fa-square-github"></i></a>
+
+                    <i class="fa-brands fa-square-x-twitter fa-3x "></i>
+                    <i class="fa-brands fa-square-facebook fa-3x "></i>
+                </div>
+                <p>© Atilla ARSLAN, 2023 Inc.</p>
+                <p>Tasarım Bilişim Teknoloji</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
